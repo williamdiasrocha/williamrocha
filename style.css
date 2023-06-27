@@ -49,10 +49,11 @@ h1 {
   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #ffd000 0%,
-    #c7b304 29%,
-    #ecd401 67%,
-    #fffb00 180%
+    #d1ab00 20%,
+    #ffeb3b 29%,
+    #e9d94f 77%,
+    #fffb00 50%,
+    #d1ab00 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -104,7 +105,7 @@ img {
 }
 
 button {
-  width: 140px;
+  width: 155px;
   height: 25px;
   
   border-radius: 15px;
@@ -121,7 +122,7 @@ button {
 }
 
 .exp_box {
-  display: inline;
+  display: flexbox;
   justify-content: center;
   align-items: center;
   padding-top: 0px;
@@ -135,7 +136,7 @@ button {
 .voltar_btn {
   display: flex;
   justify-content: center;
-  margin-top: 280px;
+  margin-top: 5px;
 }
 
 .h1_exp {
@@ -191,4 +192,45 @@ a {
 
 .voltar{
   width: 90px;
+}
+
+.formulario {
+  
+  border-radius: 20px;
+
+  width: 380px;
+  height: 300px;
+  background-color: #59d8a1;
+  
+
+  margin-top: 15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.exp_box1 {
+display: grid;
+
+}
+
+.entreContato {
+  margin-top: 0px;
+}
+
+.form2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.submitbtn {
+  margin-top: 15px;
+  display:inline;
+  justify-content: center;
+  align-items: center;
+  margin-left: 26%;
+}
+#contato {
+  margin-bottom: 0px;
 }

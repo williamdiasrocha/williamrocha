@@ -27,8 +27,8 @@ body {
    transition: transform .5s ease;
 }
 .box:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    /* -webkit-transform: scale(1.1);
+    transform: scale(1.1); */
  
 }
 
@@ -64,6 +64,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
+  
 }
 
 @keyframes textclip {
@@ -142,10 +143,16 @@ button {
 .h1_exp {
   margin-top: 35px;
   font-size: 40px;
+  margin-bottom: 0px;
 }
 
 .dev {
   /* text-shadow: 8px 8px 35px #036666; */
+  margin-top: 125px;
+  color: #484848;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform:uppercase;
 }
 
 button {
@@ -203,10 +210,18 @@ a {
   background-color: #59d8a1;
   
 
-  margin-top: 15px;
+  margin-top: 0px;
   display:flex;
-  justify-content: center;
-  align-items: center;  
+  justify-content:center;
+  align-items: center; 
+  text-align: justify;
+  line-height: 22px;
+
+}
+
+#mensagem {
+  width: 290px;
+  height: 50px;
 }
 
 .exp_box1 {
@@ -215,7 +230,7 @@ display: grid;
 }
 
 .entreContato {
-  margin-top: 0px;
+  margin-top: -10px;
 }
 
 .form2 {
@@ -224,13 +239,149 @@ display: grid;
   font-size: 25px;
 }
 
+
+
 .submitbtn {
   margin-top: 15px;
-  display:inline;
+  display:flex;
   justify-content: center;
   align-items: center;
-  margin-left: 26%;
+  
 }
 #contato {
   margin-bottom: 0px;
+}
+
+ul {
+  position:fixed;
+  top: 20%;
+  left: 61%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  margin-top: 100px;
+  padding: 0;
+  display: flex;
+  font-family: 'Press Start 2P';
+  
+}
+
+ul li {
+  list-style: none;
+  font-family: 'Press Start 2P';
+  font-size: 1.7em;
+  letter-spacing: 15px;
+  text-shadow: none;
+  animation: animate 2s linear infinite;
+  color: #484848;
+}
+@keyframes animate {
+  0% {
+    color: #484848;
+    text-shadow:none;
+
+  }
+  18% {
+    color: #484848;
+    text-shadow: none;
+  }
+  20% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  30% {
+    color: #484848;
+    text-shadow: none;
+  }
+  35% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  70% {
+    color: #484848;
+    text-shadow: none;
+
+  }
+  85% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 20px #ff6c00;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+
+  }
+  100% {
+    color: #484848;
+    text-shadow: none;
+  }
+}
+ul li:nth-child(1){
+  animation-delay: 2s;
+}
+ul li:nth-child(2){
+  animation-delay: 2.5s;
+}
+ul li:nth-child(3){
+  animation-delay: 3s;
+}
+ul li:nth-child(4){
+  animation-delay: 3.1s;
+}
+ul li:nth-child(5){
+  animation-delay: 1s;
+}
+ul li:nth-child(6){
+  animation-delay: 1.1s;
+}
+ul li:nth-child(7){
+  animation-delay: 1.2s;
+}
+
+form {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+label {
+  display: inline;
+  justify-content: flex-start;
+  align-items: start;
+  text-align: start;
+}
+
+input {
+  display: inline;
+  justify-content: end;
+  
+  align-items: end;
+  text-align: center;
+  margin-right: 0px;
+}
+
+.intro {
+  width: 500px;
+  height: 140px;
+  border-radius: 25px;
+  display:block;
+  font-size:19px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: #012c2c; */
+} 
+#form {
+  width: 176px;
+}
+#dataNasc {
+  width: 152px;
+}
+
+#email {
+  width: 238px;
+}
+
+#celular {
+  width: 235px;
 }
